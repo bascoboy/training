@@ -7,6 +7,24 @@
   margin: -20px 5rem 0 7rem;
 }
 
+body {
+  transition: background-color 0.5s ease;
+}
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.toggle-button {
+  /* background-color: #008CBA; */
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
 #preloader {
   position: fixed;
   left: 0;
@@ -322,7 +340,7 @@ button:hover {
 .card h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #8CACBA;
+  color: white;
   text-align: justify;
   margin-top: 2rem;
 }
@@ -330,7 +348,7 @@ button:hover {
 .card p {
   text-align: left;
   margin-bottom: 20px;
-  color: #8CACBA;
+  color: white;
   font-size: 16px;
   line-height: 25px;
 }

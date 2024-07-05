@@ -10,7 +10,8 @@
     <title>Figma Project</title>
 </head>
 
-<body>
+<body class="light-mode">
+    
     <div id="preloader">
         <div class="spinner"></div>
     </div>
@@ -38,6 +39,7 @@
                         </ul>
                         <button class="button" type="button"><span>Register</span></button>
                         <button class="button" type="button"><span>Login</span></button>
+                        <button class="toggle-button" onclick="toggleBackgroundColor()">Change Background</button>
                     </div>
                 </nav>
             </section>
@@ -181,6 +183,16 @@
             const preloader = document.getElementById('preloader');
             preloader.style.display = 'none';
         });
+        function toggleBackgroundColor() {
+            const body = document.body;
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            }
+        }
     </script>
 </body>
 
